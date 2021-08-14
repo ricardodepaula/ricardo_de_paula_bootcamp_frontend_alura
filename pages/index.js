@@ -1,10 +1,16 @@
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import React from 'react';
+import Cover from '../src/components/common/Cover';
+import Header from '../src/components/common/Header';
+import WrapperProjects from '../src/components/common/Projects/WrapperProjects';
+import Footer from '../src/components/common/Footer';
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <>
+      <Cover />
+      <Header />
+      <WrapperProjects />
+      <Footer />
+    </>
+  );
 }
